@@ -161,3 +161,13 @@ print(modified_content)
 
 # Close the file
 file.close()
+
+
+# Deleting a file
+import os
+
+# Check if the file exists
+if os.path.exists("test.txt"):
+    # Delete the file
+    os.remove("test.txt")
+    print("File deleted successfully")
